@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Define a class for the glitter effect */
+.glitter-effect {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Define the glitter effect on hover */
+.glitter-effect:hover {
+    transform: rotate(10deg) scale(1.1);
+    background-image: linear-gradient(135deg, #00f, transparent);
+    background-size: 150% 150%;
+    animation: glitter 1s linear infinite;
+}
+
+/* Define a keyframe animation for the glitter effect */
+@keyframes glitter {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
